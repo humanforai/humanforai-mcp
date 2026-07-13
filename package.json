@@ -1,6 +1,6 @@
 {
   "name": "humanforai",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "mcpName": "dev.humanforai/humanforai",
   "description": "MCP server for Human For AI — hire a real human operator for tasks that need physical presence, human perception, or human judgment: real-world verification, product testing, AI output review, data collection, and local errands. Free during the pilot.",
   "keywords": [

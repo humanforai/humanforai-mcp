@@ -4,7 +4,11 @@
   "title": "Human For AI",
   "description": "Hire a real human for real-world verification, product testing, AI output review, and errands.",
   "websiteUrl": "https://humanforai.dev",
-  "version": "0.1.3",
+  "repository": {
+    "url": "https://github.com/humanforai/humanforai-mcp",
+    "source": "github"
+  },
+  "version": "0.1.4",
   "remotes": [
     {
       "type": "streamable-http",
@@ -15,7 +19,7 @@
     {
       "registryType": "npm",
       "identifier": "humanforai",
-      "version": "0.1.3",
+      "version": "0.1.4",
       "transport": {
         "type": "stdio"
       }
