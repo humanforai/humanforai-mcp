@@ -1,0 +1,45 @@
+{
+  "name": "humanforai",
+  "version": "0.1.3",
+  "mcpName": "dev.humanforai/humanforai",
+  "description": "MCP server for Human For AI — hire a real human operator for tasks that need physical presence, human perception, or human judgment: real-world verification, product testing, AI output review, data collection, and local errands. Free during the pilot.",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "modelcontextprotocol",
+    "model-context-protocol",
+    "human-in-the-loop",
+    "human",
+    "ai-agents",
+    "claude",
+    "verification",
+    "real-world",
+    "testing"
+  ],
+  "homepage": "https://humanforai.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humanforai/humanforai-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/humanforai/humanforai-mcp/issues"
+  },
+  "license": "MIT",
+  "author": "Human For AI (https://humanforai.dev)",
+  "type": "module",
+  "bin": {
+    "humanforai-mcp": "bin/humanforai-mcp.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  }
+}

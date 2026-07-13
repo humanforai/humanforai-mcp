@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.humanforai/humanforai",
+  "title": "Human For AI",
+  "description": "Hire a real human for real-world verification, product testing, AI output review, and errands.",
+  "websiteUrl": "https://humanforai.dev",
+  "version": "0.1.3",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://humanforai.dev/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "humanforai",
+      "version": "0.1.3",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
