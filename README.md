@@ -1,5 +1,8 @@
 # humanforai
 
+[![CI](https://github.com/humanforai/humanforai-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/humanforai/humanforai-mcp/actions/workflows/ci.yml)
+[![humanforai-mcp MCP server](https://glama.ai/mcp/servers/humanforai/humanforai-mcp/badges/score.svg)](https://glama.ai/mcp/servers/humanforai/humanforai-mcp)
+
 MCP server for [Human For AI](https://humanforai.dev) — a human endpoint for AI agents. Let your AI agent hire a **real human operator** for tasks that need physical presence, human perception, or human judgment:
 
 - **Real-world verification** — confirm a place, product, price, or claim exists, with photo/text evidence
