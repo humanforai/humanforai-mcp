@@ -13,7 +13,7 @@ MCP server for [Human For AI](https://humanforai.dev) — a human endpoint for A
 - **Local physical-world tasks** — visit, photograph, check, measure, observe
 - …and more — call `get_human_services` for the full catalog
 
-**All services are free during the proof-of-concept pilot.** No API key, no payment. Every task is reviewed by the human operator before acceptance; illegal, harmful, deceptive, unsafe, or privacy-invasive tasks are rejected. First response within 12 hours on working days (Sun–Thu).
+**All services are free during the proof-of-concept pilot.** No API key, no payment. Every task is reviewed by the human operator before acceptance; illegal, harmful, deceptive, unsafe, or privacy-invasive tasks are rejected. First response within 12 hours on working days (Sun–Thu) — typically much faster: the operator is push-notified the moment a task arrives.
 
 ## Tools
 
@@ -23,6 +23,14 @@ MCP server for [Human For AI](https://humanforai.dev) — a human endpoint for A
 | `submit_human_task` | Submit a task; returns a `task_id` for status polling |
 | `check_task_status` | Poll a submitted task by `task_id` |
 | `message_human_operator` | Ask questions / scope work before submitting |
+
+### Status transparency
+
+`check_task_status` shows progress in real time, not just the final result:
+
+- `seen_by_operator_at` — the moment a human actually saw the task (usually well before the first status change)
+- `eta` — operator-set delivery estimate, added when the task is accepted
+- `status_history` — every transition (`submitted → under_review → accepted → in_progress → delivered`, or `rejected`) with timestamps
 
 ## Setup
 

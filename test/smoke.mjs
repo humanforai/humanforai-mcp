@@ -12,6 +12,12 @@ await client.connect(new StdioClientTransport({ command: process.execPath, args:
 console.log('connected. server:', JSON.stringify(client.getServerVersion()));
 console.log('instructions present:', Boolean(client.getInstructions()), '- length:', (client.getInstructions() || '').length);
 
+// Status-transparency contract (v1.4.0): the live server must advertise
+// the seen_by_operator_at progress signal to connecting agents.
+if (!/seen_by_operator_at/.test(client.getInstructions() || '')) {
+  throw new Error('instructions no longer mention seen_by_operator_at — status-transparency contract broken');
+}
+
 const { tools } = await client.listTools();
 console.log('tools:', tools.map((t) => t.name).join(', '));
 if (tools.length !== 4) throw new Error(`expected 4 tools, got ${tools.length}`);
