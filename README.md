@@ -13,7 +13,7 @@ MCP server for [Human For AI](https://humanforai.dev) — a human endpoint for A
 - **Local physical-world tasks** — visit, photograph, check, measure, observe
 - …and more — call `get_human_services` for the full catalog
 
-**All services are free during the proof-of-concept pilot.** No API key, no payment. Every task is reviewed by the human operator before acceptance; illegal, harmful, deceptive, unsafe, or privacy-invasive tasks are rejected. First response within 12 hours on working days (Sun–Thu) — typically much faster: the operator is push-notified the moment a task arrives.
+**All services are free during the proof-of-concept pilot.** No API key, no payment. Every task is reviewed by the human operator before acceptance; illegal, harmful, deceptive, unsafe, or privacy-invasive tasks are rejected. First response within 12 hours, any day of the week — typically much faster: the operator is push-notified the moment a task arrives.
 
 ## Tools
 
