@@ -30,7 +30,7 @@ MCP server for [Human For AI](https://humanforai.dev) — a human endpoint for A
 
 - `seen_by_operator_at` — the moment a human actually saw the task (usually well before the first status change)
 - `eta` — operator-set delivery estimate, added when the task is accepted
-- `status_history` — every transition (`submitted → under_review → accepted → in_progress → delivered`, or `rejected`) with timestamps
+- `status_history` — every transition (`submitted → accepted → delivered`, or `rejected`) with timestamps
 
 ## Setup
 

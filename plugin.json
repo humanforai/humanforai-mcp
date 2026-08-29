@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "humanforai",
+  "version": "0.1.4",
+  "description": "Hire a verified human from your AI agent: Human For AI's MCP server (real-world verification, product testing, AI output review, data collection, physical-world tasks) plus the hire-a-human skill. Free during the pilot, no auth.",
+  "author": { "name": "Human For AI", "url": "https://humanforai.dev" },
+  "homepage": "https://humanforai.dev",
+  "repository": "https://github.com/humanforai/humanforai-mcp",
+  "license": "MIT",
+  "keywords": ["human-in-the-loop", "mcp", "real-world", "verification", "human"],
+  "mcpServers": {
+    "humanforai": {
+      "type": "http",
+      "url": "https://humanforai.dev/mcp"
+    }
+  },
+  "skills": ["./skills/hire-a-human/SKILL.md"]
+}
